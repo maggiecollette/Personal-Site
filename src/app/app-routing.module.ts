@@ -1,7 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from "./home/home.component";
-import {AboutMeComponent} from "./about-me/about-me.component";
 import {ResumeComponent} from "./resume/resume.component";
 import {ProjectsComponent} from "./projects/projects.component";
 import {AngularWidgetsComponent} from "./angular-widgets/angular-widgets.component";
@@ -11,7 +10,6 @@ import {MarbleSolitaireComponent} from "./marble-solitaire/marble-solitaire.comp
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'about-me', component: AboutMeComponent},
   {path: 'resume', component: ResumeComponent},
   {path: 'projects', component: ProjectsComponent},
   {path: 'angular-widgets', component: AngularWidgetsComponent},
