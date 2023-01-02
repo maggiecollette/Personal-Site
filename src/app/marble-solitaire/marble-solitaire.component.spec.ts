@@ -1,6 +1,6 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MarbleSolitaireComponent } from './marble-solitaire.component';
+import {MarbleSolitaireComponent} from './marble-solitaire.component';
 
 describe('MarbleSolitaireComponent', () => {
   let component: MarbleSolitaireComponent;
@@ -8,9 +8,9 @@ describe('MarbleSolitaireComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MarbleSolitaireComponent ]
+      declarations: [MarbleSolitaireComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(MarbleSolitaireComponent);
     component = fixture.componentInstance;
