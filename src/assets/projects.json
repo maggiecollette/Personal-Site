@@ -1,0 +1,210 @@
+[
+  {
+    "href": "angular-widgets",
+    "name": "Angular Widgets",
+    "github": "https://github.com/maggiecollette/Angular-Widgets",
+    "description": "Provide an extended description here...",
+    "images": [
+      {
+        "title": "The Current Weather Component's Empty State:",
+        "src": "assets/ANGULAR-WIDGETS-SS3.png"
+      },
+      {
+        "title": "The Current Weather Component After a Search:",
+        "src": "assets/ANGULAR-WIDGETS-SS1.png"
+      }
+    ],
+    "skills": [
+      {
+        "name": "TypeScript",
+        "icon": "bi bi-filetype-tsx"
+      },
+      {
+        "name": "HTML",
+        "icon": "bi bi-filetype-html"
+      },
+      {
+        "name": "CSS",
+        "icon": "bi bi-filetype-css"
+      },
+      {
+        "name": "JSON",
+        "icon": "bi bi-filetype-json"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "bi bi-bootstrap"
+      },
+      {
+        "name": "AngularJS",
+        "icon": "bi bi-window"
+      },
+      {
+        "name": "Node.js",
+        "icon": "bi-diagram-2"
+      }
+    ]
+  },
+  {
+    "href": "oasis-project-fall2022",
+    "name": "HowBusyIsMarino.com",
+    "github": "https://github.com/maggiecollette/Marino-Gym-Project",
+    "description": "Provide an extended description here...",
+    "images": [
+      {
+        "title": "Home Page:",
+        "src": "assets/OASIS-SS3.png"
+      },
+      {
+        "title": "Home Page:",
+        "src": "assets/OASIS-SS4.png"
+      },
+      {
+        "title": "Graphs Page:",
+        "src": "assets/OASIS-SS5.png"
+      },
+      {
+        "title": "Sample Graph:",
+        "src": "assets/OASIS-SS1.jpg"
+      }
+    ],
+    "skills": [
+      {
+        "name": "JavaScript",
+        "icon": "bi bi-filetype-js"
+      },
+      {
+        "name": "Python",
+        "icon": "bi bi-filetype-py"
+      },
+      {
+        "name": "HTML",
+        "icon": "bi bi-filetype-html"
+      },
+      {
+        "name": "CSS",
+        "icon": "bi bi-filetype-css"
+      },
+      {
+        "name": "JSON",
+        "icon": "bi bi-filetype-json"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "bi bi-bootstrap"
+      },
+      {
+        "name": "Node.js",
+        "icon": "bi bi-diagram-2"
+      },
+      {
+        "name": "Plotly.js",
+        "icon": "bi bi-bar-chart-line"
+      },
+      {
+        "name": "Crontab",
+        "icon": "bi bi-clock-history"
+      },
+      {
+        "name": "AWS",
+        "icon": "bi bi-database"
+      },
+      {
+        "name": "BeautifulSoup",
+        "icon": "bi bi-file-bar-graph"
+      }
+    ]
+  },
+  {
+    "href": "ood-ime",
+    "name": "Image Manipulation and Enhancement",
+    "github": "",
+    "description": "Provide an extended description here...",
+    "images": [
+      {
+        "title": "Loaded Image:",
+        "src": "assets/IME-SS1.png"
+      },
+      {
+        "title": "Downscaled Image:",
+        "src": "assets/IME-SS2.png"
+      },
+      {
+        "title": "Mosaic Filtered Image:",
+        "src": "assets/IME-SS3.png"
+      },
+      {
+        "title": "Greyscale Filtered Image:",
+        "src": "assets/IME-SS4.png"
+      },
+      {
+        "title": "Sepia Filtered Image:",
+        "src": "assets/IME-SS5.png"
+      },
+      {
+        "title": "Blur Filtered Image:",
+        "src": "assets/IME-SS6.png"
+      },
+      {
+        "title": "Sharpen Filtered Image:",
+        "src": "assets/IME-SS7.png"
+      },
+      {
+        "title": "Vertically Flipped Image:",
+        "src": "assets/IME-SS8.png"
+      },
+      {
+        "title": "Horizontally Flipped Image:",
+        "src": "assets/IME-SS9.png"
+      },
+      {
+        "title": "Example Filter Preview:",
+        "src": "assets/IME-SS11.png"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java",
+        "icon": "bi bi-filetype-java"
+      }
+    ]
+  },
+  {
+    "href": "ood-marble-solitaire",
+    "name": "Marble Solitaire Game",
+    "github": "",
+    "description": "Provide an extended description here...",
+    "images": [
+      {
+        "title": "Default English Solitaire Game:",
+        "src": "assets/MARBLE-ENG1.png"
+      },
+      {
+        "title": "Example Custom English Solitaire Game:",
+        "src": "assets/MARBLE-ENG2.png"
+      },
+      {
+        "title": "Default European Solitaire Game:",
+        "src": "assets/MARBLE-EUR1.png"
+      },
+      {
+        "title": "Example Custom European Solitaire Game:",
+        "src": "assets/MARBLE-EUR2.png"
+      },
+      {
+        "title": "Default Triangle Solitaire Game:",
+        "src": "assets/MARBLE-TRI1.png"
+      },
+      {
+        "title": "Example Custom Triangle Solitaire Game:",
+        "src": "assets/MARBLE-TRI2.png"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Java",
+        "icon": "bi bi-filetype-java"
+      }
+    ]
+  }
+]
