@@ -4,7 +4,7 @@
         <div class="col-6" *ngIf="project.name && project.image && project.description">
           <div class="card shadow m-4">
             <h4 class="card-header text-info"><strong>{{project.name}}</strong></h4>
-            <img alt="Something went wrong!" class="card-img" src={{project.image}}>
+            <img alt="Something went wrong!" class="card-img border-dark border-top border-bottom" src={{project.image}}>
             <div class="container card-body text-center">
               <p class="text-dark text-start">{{project.description}}</p>
               <ng-container *ngIf="project.buttons">

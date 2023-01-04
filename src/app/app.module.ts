@@ -9,6 +9,7 @@ import {AngularWidgetsComponent} from './angular-widgets/angular-widgets.compone
 import {OasisProjectComponent} from './oasis-project/oasis-project.component';
 import {IMEComponent} from './ime/ime.component';
 import {MarbleSolitaireComponent} from './marble-solitaire/marble-solitaire.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MarbleSolitaireComponent} from './marble-solitaire/marble-solitaire.comp
     AngularWidgetsComponent,
     OasisProjectComponent,
     IMEComponent,
-    MarbleSolitaireComponent
+    MarbleSolitaireComponent,
+    ProjectPageComponent
   ],
   imports: [
     BrowserModule,
