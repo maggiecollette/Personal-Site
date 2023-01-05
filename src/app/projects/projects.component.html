@@ -1,7 +1,7 @@
 <div class="container min-vh-100">
   <br>
     <div class="row justify-content-center">
-      <ng-container *ngFor="let project of projects.projects;">
+      <ng-container *ngFor="let project of projects;">
         <div class="col-6" *ngIf="project.name && project.image && project.description">
           <div class="card shadow border-0 m-4">
             <img alt="Something went wrong!" class="card-img border border-dark" src="{{project.image}}">

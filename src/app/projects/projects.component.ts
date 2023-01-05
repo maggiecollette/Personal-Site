@@ -6,8 +6,7 @@ import {Component} from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  projects = {
-    "projects":[
+  projects = [
       {
         "name":"Angular Widgets",
         "image":"assets/ANGULAR-WIDGETS-SS2.png",
@@ -100,5 +99,4 @@ export class ProjectsComponent {
         }
       }
     ]
-  }
 }
