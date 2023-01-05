@@ -20,26 +20,29 @@ export class ProjectsComponent {
             "href":"angular-widgets",
             "target": null,
             "text":"See More",
-            "icon": null
+            "icon": "bi bi-chevron-right"
           },
           {
             "href":"https://maggiecollette.github.io/Angular-Widgets/",
             "target": "_blank",
             "text":"Visit Site",
             "icon":"bi bi-box-arrow-up-right"
+          },
+          {
+            "href":"https://github.com/maggiecollette/Angular-Widgets",
+            "target": "_blank",
+            "text":"GitHub",
+            "icon":"bi bi-github"
           }
         ],
         "footer":{
-          "href":"https://github.com/maggiecollette/Angular-Widgets",
-          "target": "_blank",
-          "icon":"bi bi-github",
-          "text":"GitHub"
+          "text":""
         }
       },
       {
         "name":"HowBusyIsMarino.com",
         "image":"assets/OASIS-SS2.jpg",
-        "description":"A web app conceptualized with group members in Northeastern Oasis during the Fall 2022 " +
+        "description":"A website conceptualized with group members in Northeastern Oasis during the Fall 2022 " +
           "semester. Our objective was to gain experience in the web development process while providing a valuable " +
           "product to other Northeastern students.",
         "buttons":[
@@ -47,14 +50,17 @@ export class ProjectsComponent {
             "href":"oasis-project-fall2022",
             "target": null,
             "text":"See More",
-            "icon": null
+            "icon": "bi bi-chevron-right"
+          },
+          {
+            "href":"https://github.com/maggiecollette/Marino-Gym-Project",
+            "target": "_blank",
+            "text":"GitHub",
+            "icon":"bi bi-github"
           }
         ],
         "footer":{
-          "href":"https://github.com/maggiecollette/Marino-Gym-Project",
-          "target": "_blank",
-          "icon":"bi bi-github",
-          "text":"GitHub"
+          "text":""
         }
       },
       {
@@ -68,13 +74,10 @@ export class ProjectsComponent {
             "href":"ood-ime",
             "target": null,
             "text":"See More",
-            "icon":null
+            "icon":"bi bi-chevron-right"
           }
         ],
         "footer":{
-          "href":null,
-          "target":null,
-          "icon":null,
           "text":"Code available upon request."
         }
       },
@@ -89,13 +92,10 @@ export class ProjectsComponent {
             "href":"ood-marble-solitaire",
             "target":null,
             "text":"See More",
-            "icon":null
+            "icon":"bi bi-chevron-right"
           }
         ],
         "footer":{
-          "href":null,
-          "target":null,
-          "icon":null,
           "text":"Code available upon request."
         }
       }
