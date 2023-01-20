@@ -9,7 +9,11 @@
       </ng-container>
     </h1>
   </div>
-  <p class="mx-4 my-2">{{description}}</p>
+  <ul class="mx-4 my-2">
+    <ng-container *ngFor="let line of description">
+      <li>{{line}}</li>
+    </ng-container>
+  </ul>
 
   <h1 class="text-primary my-4">Project Screenshots</h1>
   <div class="row justify-content-center">

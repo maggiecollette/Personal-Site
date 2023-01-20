@@ -8,7 +8,17 @@ import {Component} from '@angular/core';
 export class OasisProjectComponent {
   name = "HowBusyIsMarino.com";
   github = "https://github.com/maggiecollette/Marino-Gym-Project";
-  description = "Provide an extended description here...";
+  description = [
+    "HowBusyIsMarino.com was created by myself and three fellow Northeastern students to display the historical " +
+    "capacity levels of the Marino Center and SquashBusters campus gyms.",
+    "With one semester to complete our project and no prior web development experience, we successfully created a " +
+    "fully-functioning website (unfortunately no longer hosted online).",
+    "First, we worked through automating web scraping on Northeastern’s current gym capacity webpage and storing " +
+    "that data using an AWS server.",
+    "Once we collected and formatted our data, I learned how to fetch, filter, and plot it onto a heat map using " +
+    "JavaScript along with Plotly.js.",
+    "We used HTML, CSS, and Bootstrap for the visual design of our site."
+  ];
   images = [
     {title: "Home Page:", src: "assets/OASIS-SS3.png" },
     {title: "Home Page:", src: "assets/OASIS-SS4.png" },

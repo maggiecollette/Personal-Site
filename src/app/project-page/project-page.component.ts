@@ -8,7 +8,7 @@ import {Component, Input} from '@angular/core';
 export class ProjectPageComponent {
   @Input() name!: string;
   @Input() github!: string;
-  @Input() description!: string;
+  @Input() description!: string[];
   @Input() images!: {title: string, src: string}[];
   @Input() skills!: {name: string, icon: string}[];
 }
