@@ -33,7 +33,6 @@ export class MarbleSolitaireComponent {
   ];
   skills = [
     {name: "Java", icon: "bi bi-filetype-java"},
-    {name: "GitHub", icon: "bi bi-github"},
-    {name: "Java Swing", icon: "bi bi-display"}
+    {name: "GitHub", icon: "bi bi-github"}
   ];
 }
