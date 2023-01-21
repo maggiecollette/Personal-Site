@@ -44,6 +44,8 @@ export class IMEComponent {
     {title: "Example Filter Preview:", src: "assets/IME-SS11.png" },
   ];
   skills = [
-    {name: "Java", icon: "bi bi-filetype-java"}
+    {name: "Java", icon: "bi bi-filetype-java"},
+    {name: "Object Oriented Design", icon: "bi bi-diagram-3-fill"},
+    {name: "GitHub", icon: "bi bi-github"}
   ];
 }

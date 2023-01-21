@@ -32,6 +32,9 @@ export class MarbleSolitaireComponent {
     {title: "Example Custom Triangle Solitaire Game:", src: "assets/MARBLE-TRI2.png" }
   ];
   skills = [
-    {name: "Java", icon: "bi bi-filetype-java"}
+    {name: "Java", icon: "bi bi-filetype-java"},
+    {name: "Object Oriented Design", icon: "bi bi-diagram-3-fill"},
+    {name: "GitHub", icon: "bi bi-github"},
+    {name: "Java Swing", icon: "bi bi-display"}
   ];
 }
