@@ -45,7 +45,6 @@ export class IMEComponent {
   ];
   skills = [
     {name: "Java", icon: "bi bi-filetype-java"},
-    {name: "Object Oriented Design", icon: "bi bi-diagram-3-fill"},
     {name: "GitHub", icon: "bi bi-github"}
   ];
 }
