@@ -34,3 +34,5 @@ the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 ## To update GH pages
 ng build
 ng deploy --base-href=https://maggiecollette.github.io/Personal-Site/
+
+10/12/23: Fixing commits that came from being signed in as the incorrect user locally.
