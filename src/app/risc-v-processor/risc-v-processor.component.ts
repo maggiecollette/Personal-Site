@@ -30,7 +30,7 @@ export class RISCVProcessorComponent {
     "instructions and execute them in order as the program counter increases, removing the need for writing out " +
     "opcodes, register numbers, and immediate/offset values.",
     "Finally, in the seventh lab, branching functionality was introduced to the processor. This allowed for branching and jumping" +
-    "instructions to be completed, and was the final piece of the processor that allowed us to execute RISC-V " +
+    " instructions to be completed, and was the final piece of the processor that allowed us to execute RISC-V " +
     "assembly instructions."
   ];
   images = [];
