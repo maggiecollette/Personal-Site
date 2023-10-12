@@ -1,6 +1,6 @@
 # PersonalSite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+Please note, commits on 10/12/23 by Elizabeth Jamison came from me, with another user accidentally signed in locally. 
 
 ## Development server
 
