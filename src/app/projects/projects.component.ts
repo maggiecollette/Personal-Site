@@ -63,9 +63,9 @@ export class ProjectsComponent {
         }
       },
       {
-        "name":"CS3500 Image Manipulation and Enhancement",
+        "name":"CS 3500 Image Manipulation and Enhancement",
         "image":"assets/IME-SS10.png",
-        "description":"Developed in Java with a class partner for CS3500, Object Oriented Design, during the Fall " +
+        "description":"Developed in Java with a class partner for CS 3500, Object Oriented Design, during the Fall " +
           "2022 semester. This project's view exists in both GUI (Java Swing) and text (Console) forms, and had an " +
           "emphasis on writing clear and extensible code.",
         "buttons":[
@@ -81,9 +81,9 @@ export class ProjectsComponent {
         }
       },
       {
-        "name":"CS3500 Marble Solitaire Game",
+        "name":"CS 3500 Marble Solitaire Game",
         "image":"assets/OOD-MARBLE-SOLITAIRE-SS1.png",
-        "description":"Developed in Java for CS3500, Object Oriented Design, during the Fall 2022 semester. The main " +
+        "description":"Developed in Java for CS 3500, Object Oriented Design, during the Fall 2022 semester. The main " +
           "goal of this project was to teach the correct implementation of the Model View Controller design pattern, " +
           "as well as to practice other design patterns discussed in class.",
         "buttons":[
@@ -97,6 +97,62 @@ export class ProjectsComponent {
         "footer":{
           "text":"Code available upon request."
         }
+      },
+    {
+      "name":"CS 3650 Basic Shell",
+      "image":"assets/SHELL-SS1.png",
+      "description":"Developed in C with a class partner for CS 3650, Computer Systems, during the Spring 2023 semester." +
+        " This project consisted of creating a mini shell with basic command capabilities and allowed us to further our" +
+        " understanding of the inner-workings of a shell.",
+      "buttons":[
+        {
+          "href":"basic-shell",
+          "target": null,
+          "text":"See More",
+          "icon": "bi bi-chevron-right"
+        }
+      ],
+      "footer":{
+        "text":"Code available upon request. Unfortunately, I no longer have access to the VM that would allow me to " +
+          "provide project screenshots."
       }
+    },
+    {
+      "name":"CS 3650 File System",
+      "image":"assets/FILE-SYSTEM-SS1.png",
+      "description":"Developed in C with a class partner for CS 3650, Computer Systems, during the Spring 2023 semester." +
+        " The objective of this project was to continue gaining experience programming in C while furthering our " +
+        "understanding of the filesystems as a whole.",
+      "buttons":[
+        {
+          "href":"file-system",
+          "target": null,
+          "text":"See More",
+          "icon": "bi bi-chevron-right"
+        }
+      ],
+      "footer":{
+        "text":"Code available upon request. Unfortunately, I no longer have access to the VM that would allow me to " +
+          "provide project screenshots."
+      }
+    },
+    {
+      "name":"EECE 2323 RISC-V Processor",
+      "image":"assets/RISCV-PROCESSOR-SS1.png",
+      "description":"Developed in SystemVerilog for EECE 2323, Fundamentals of Digital Design Lab, during the Summer 1 " +
+        "2023 semester. The goal of this project was to create a functioning RISC-V processor over the course of the 8" +
+        " week long semester, beginning with a 16-bit adder and ending with branching functionality.",
+      "buttons":[
+        {
+          "href":"risc-v-processor",
+          "target": null,
+          "text":"See More",
+          "icon": "bi bi-chevron-right"
+        }
+      ],
+      "footer":{
+        "text":"Code available upon request."
+      }
+    }
     ]
 }

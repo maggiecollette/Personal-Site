@@ -2,200 +2,125 @@
   <br>
   <div class="row justify-content-start">
     <div class="col-4">
-      <!-- <a href="assets/Marguerite-Collette-Resume.pdf" target="_blank"> opens file in new tab, which is better? -->
-      <a download href="assets/Marguerite-Collette-Resume.pdf">
+      <a download href="{{resume}}">
         <button class="btn btn-dark">
           Download
         </button>
       </a>
     </div>
-    <div class="col-4">
-      <p class="text-center"><strong>Marguerite Collette</strong></p>
-      <p class="text-center">Boston, MA • collette.m@northeastern.edu</p>
-      <p class="text-center">Available May 1, 2023</p>
+    <div>
+      <h3 class="text-center"><strong>{{me}}</strong></h3>
+      <br>
+      <p class="text-center">{{contacts}}</p>
+      <div class="text-center">
+        <ng-container *ngFor="let site of websites;">
+          <span class="text-center">{{site.hostName}}: </span> <a href="{{site.pageLink}}">{{site.pageLink}}</a>
+        </ng-container>
+      </div>
+      <br>
+      <p class="text-center">Available May 1, 2024</p>
     </div>
   </div>
   <hr>
 
-  <p class="text-center"><strong>Education</strong></p>
+  <h5 class="text-center"><strong>Education</strong></h5>
   <div class="row justify-content-between">
     <div class="col-3 text-start">
-      <p><strong>NORTHEASTERN UNIVERSITY</strong></p>
+      <p><strong>{{education.institution | uppercase}}</strong></p>
     </div>
     <div class="col-2 text-end">
-      <p>Boston, MA</p>
+      <p>{{education.location}}</p>
     </div>
   </div>
   <div class="row justify-content-between">
-    <div class="col-10 text-start">
-      <ul>
-        <li>Candidate for a Bachelor of Science degree in Computer Science</li>
-        <li>Relevant Coursework: Object Oriented Design, Algorithms, Computer Systems, Logic and Computation,
-          Mathematics of Data Models, Foundations of Cybersecurity, Discrete Structures, Fundamentals of Computer Science I & II.</li>
-      </ul>
+    <div class="col-3 text-start">
+      <p><strong>{{education.college}}</strong></p>
     </div>
     <div class="col-2 text-end">
-      <p>September 2021 - Present</p>
-    </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-4 text-start">
-      <p><strong>STUDY ABROAD - UNIVERSITY COLLEGE DUBLIN</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>Dublin, Ireland</p>
+      <p>{{education.date}}</p>
     </div>
   </div>
   <div class="row justify-content-between">
     <div class="col-5 text-start">
-      <p>Study abroad coursework completed</p>
+      <p>{{education.degree}}</p>
     </div>
     <div class="col-3 text-end">
-      <p>September 2021 - December 2021</p>
+      <p>Expected Graduation: {{education.graduation}}</p>
     </div>
   </div>
+  <div class="row">
+    <p>Relevant Coursework: {{education.coursework}}</p>
+    <p>Activities: {{education.involvement}}</p>
+  </div>
+  <hr>
 
-  <p class="text-center"><strong>Skills</strong></p>
+  <h5 class="text-center"><strong>Skills</strong></h5>
   <ul>
-    <li>Front End: JavaScript, TypeScript, AngularJS, JSON, HTML, Bootstrap, Node.js, CSS, Express.js, Plotly.js</li>
-    <li>Back End: Java, Python, C, AWS, Beautiful Soup, Crontab</li>
-    <li>Other: Object Oriented Programming, Algorithms, LaTeX, Racket, GitHub, Cybersecurity</li>
+    <li>Front End: {{skills.frontend}}</li>
+    <li>Back End: {{skills.backend}}</li>
+    <li>Other: {{skills.other}}</li>
   </ul>
+  <hr>
 
-  <p class="text-center"><strong>Experience</strong></p>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>NORTHEASTERN UNIVERSITY</strong></p>
+  <h5 class="text-center"><strong>Work Experience</strong></h5>
+  <ng-container *ngFor="let job of work">
+    <div class="row justify-content-between">
+      <div class="col-4 text-start">
+        <p><strong>{{job.employer | uppercase}}</strong></p>
+      </div>
+      <div class="col-2 text-end">
+        <p>{{job.location}}</p>
+      </div>
     </div>
-    <div class="col-2 text-end">
-      <p>Boston, MA</p>
+    <div class="row justify-content-between">
+      <div class="col-5 text-start">
+        <p><strong>{{job.title}}</strong></p>
+      </div>
+      <div class="col-3 text-end">
+        <p>{{job.date}}</p>
+      </div>
     </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>Teaching Assistant</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>May 2022 - Present</p>
-    </div>
-  </div>
-  <ul>
-    <li>Reinforced Fundamentals of Computer Science II students’ understanding of foundational concepts of writing and debugging programs in Java
-      during twice-weekly office hours.
-    </li>
-    <li>Directed Fundamentals of Computer Science II students through instructor assigned lab problems using worked out examples during two-hour lab
-      sessions each week.
-    </li>
-    <li>Assisted Fundamentals of Computer Science I students in learning how to design programs in Racket during twice-weekly office hours.</li>
-    <li>Grading an average of 20 assignments and exams weekly, based on style, functionality, and efficiency.</li>
-  </ul>
+    <ul>
+      <ng-container *ngFor="let point of job.responsibilities">
+        <li>{{point}}</li>
+      </ng-container>
+    </ul>
+  </ng-container>
+  <hr>
 
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>NORTHEASTERN OASIS</strong></p>
+  <h5 class="text-center"><strong>Clubs</strong></h5>
+  <ng-container *ngFor="let club of clubs">
+    <div class="row justify-content-between">
+      <div class="col-4 text-start">
+        <p><strong>{{club.club | uppercase}}</strong></p>
+      </div>
+      <div class="col-2 text-end">
+        <p>{{club.location}}</p>
+      </div>
     </div>
-    <div class="col-2 text-end">
-      <p>Boston, MA</p>
+    <div class="row justify-content-between">
+      <div class="col-5 text-start">
+        <p><strong>{{club.title}}</strong></p>
+      </div>
+      <div class="col-3 text-end">
+        <p>{{club.date}}</p>
+      </div>
     </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>Club Member</strong></p>
-    </div>
-    <div class="col-3 text-end">
-      <p>September 2022 - December 2022</p>
-    </div>
-  </div>
-  <ul>
-    <li>Conceptualized a web project that provides a means to determine the optimal time to attend Northeastern
-      University gyms based on historical capacity levels.
-    </li>
-    <li>Gained experience in gathering data with automated web scraping and storage utilizing Python, Beautiful Soup,
-      AWS, and Crontab.
-    </li>
-    <li>Self-taught the basics of JavaScript, HTML, CSS, and Bootstrap for front-end development.</li>
-  </ul>
+    <ul>
+      <ng-container *ngFor="let point of club.responsibilities">
+        <li>{{point}}</li>
+      </ng-container>
+    </ul>
+  </ng-container>
+  <hr>
 
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>GRADY & RILEY ATTORNEYS AT LAW</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>Waterbury, CT</p>
-    </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>Office Assistant</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>May 2022 - Present</p>
-    </div>
-  </div>
-  <ul>
-    <li>Enhancing office flow by streamlining the digitizing of hundreds of client files throughout the firm in a
-      comprehensive and accessible manner, such that ongoing cases can be added.
-    </li>
-    <li>Greatly reducing the volume of nonessential documents across both the Waterbury and Woodbury, CT offices, making
-      way for new client files.
-    </li>
-    <li>Performing various tasks on an as-needed basis, including but not limited to serving as a witness for document
-      signings, locating misplaced files, and reviewing time sheets.
-    </li>
-  </ul>
+  <h5 class="text-center"><strong>Projects</strong></h5>
+  <span>See a list of projects here: </span> <a href="{{projects}}">{{projects}}</a>
+  <hr>
 
-  <div class="row justify-content-between">
-    <div class="col-4 text-start">
-      <p><strong>TOWN OF MIDDLEBURY PARKS & RECREATION</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>Middlebury, CT</p>
-    </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>Lifeguard</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>June 2018 - Present</p>
-    </div>
-  </div>
-  <ul>
-    <li>Monitoring swimmers at a town lakefront on a rotating schedule with fellow lifeguards.</li>
-    <li>Performing minor saves and first aid as needed using skills from CPR/AED/First Aid certifications.</li>
-    <li>Assisting with moving boats, maintaining a sanitary beach and picnic area, patron questions, as well as opening
-      and closing the beach area each day.
-    </li>
-  </ul>
 
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>RACE4CHASE TRIATHLON PROGRAM</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>Waterbury, CT</p>
-    </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>Coach</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>June 2018 - August 2021</p>
-    </div>
-  </div>
+  <h5 class="text-center"><strong>Interests</strong></h5>
   <ul>
-    <li>Prepared inner-city children ages 6-12 for completing a triathlon at the end of each summer by teaching them to
-      swim, bike, and run.
-    </li>
-    <li>Developed unique and engaging daily training plans to promote enjoyable movement.</li>
-    <li>Maintained a safe and welcoming summer camp environment and served as a positive role model for all athletes in
-      the program.
-    </li>
-  </ul>
-
-  <p class="text-center"><strong>Interests</strong></p>
-  <ul>
-    <li>Thrifting, UConn Basketball, Cooking/Baking, Swimming, Hiking, Volunteering</li>
+    <li>Thrifting, Photography, Reading, UConn Basketball, Cooking/Baking, Swimming, Hiking, Running, Volunteering</li>
   </ul>
 </div>

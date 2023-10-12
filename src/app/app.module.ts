@@ -10,6 +10,9 @@ import {OasisProjectComponent} from './oasis-project/oasis-project.component';
 import {IMEComponent} from './ime/ime.component';
 import {MarbleSolitaireComponent} from './marble-solitaire/marble-solitaire.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
+import { ShellComponent } from './shell/shell.component';
+import { FileSystemComponent } from './file-system/file-system.component';
+import { RISCVProcessorComponent } from './risc-v-processor/risc-v-processor.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ProjectPageComponent } from './project-page/project-page.component';
     OasisProjectComponent,
     IMEComponent,
     MarbleSolitaireComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    ShellComponent,
+    FileSystemComponent,
+    RISCVProcessorComponent
   ],
   imports: [
     BrowserModule,
