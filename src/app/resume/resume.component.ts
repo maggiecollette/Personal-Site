@@ -38,15 +38,27 @@ export class ResumeComponent {
       employer: "Emoney Advisor",
       location: "Radnor, PA (Remote)",
       title: "Software Engineer, Co-Op",
-      date: "July 2023 - Present",
+      date: "July 2023 - December 2023",
       responsibilities: [
-        "Developing and testing C# code to extract comprehensive financial data from bank accounts including " +
-        "balances, transactions, and investments for clients across various financial institutions.",
-        "Analyzing web trace attributes (HTML, JavaScript, JSON, and headers) using Fiddler to determine bug root causes.",
-        "Resolving tickets related to multifactor authentication, missing headers and cookies for page navigation," +
-        " and general financial institution webpage modifications that require new parser logic.",
-        "Producing SQL scripts to manipulate the database’s existing transactions when necessary, referencing Jenkins" +
-        " builds and Octopus deployments to ensure accurate outcomes."
+        "•	Developed and tested C# code to extract comprehensive financial data from bank accounts including" +
+        " balances, transactions, and investments for clients across various financial institutions.", "Analyzed web" +
+        " trace attributes (HTML, JavaScript, JSON, and headers) using Fiddler to determine bug root causes.",
+        "Resolved tickets related to multifactor authentication, missing headers and cookies for page navigation, " +
+        "and general financial institution webpage modifications that require new parser logic.", "Produced SQL " +
+        "scripts to manipulate the database’s existing transactions when necessary, referencing Jenkins builds and" +
+        " Octopus deployments to ensure accurate outcomes."
+        ]
+    },
+    {
+      employer: "Northeastern University Oasis",
+      location: "Boston, MA",
+      title: "Executive Board Member - Resources Director",
+      date: "December 2023 - Present",
+      responsibilities: [
+        "Organizing club resources into paths which will direct students from ideation to completion of personal " +
+        "projects using their chosen frameworks as a part of a goal set by Khoury College to provide students with " +
+        "out of classroom resources.", "Assigning resource breakdowns and rewrites to individuals within a group of" +
+        " 6 people, including myself."
       ]
     },
     {
