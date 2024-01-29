@@ -40,7 +40,7 @@ export class ResumeComponent {
       title: "Software Engineer, Co-Op",
       date: "July 2023 - December 2023",
       responsibilities: [
-        "•	Developed and tested C# code to extract comprehensive financial data from bank accounts including" +
+        "Developed and tested C# code to extract comprehensive financial data from bank accounts including" +
         " balances, transactions, and investments for clients across various financial institutions.", "Analyzed web" +
         " trace attributes (HTML, JavaScript, JSON, and headers) using Fiddler to determine bug root causes.",
         "Resolved tickets related to multifactor authentication, missing headers and cookies for page navigation, " +
@@ -50,6 +50,17 @@ export class ResumeComponent {
         ]
     },
     {
+      employer: "Khoury College of Computer Sciences",
+      location: "Boston, MA",
+      title: "Student Curriculum Innovation Developer",
+      date: "December 2023 – Present",
+      responsibilities: [
+        "Creating modules related to various Computer Science disciplines under Dr. Mark Fontenot to provide " +
+        "Northeastern University Students with an expansive hub for self-directed learning.", "Completing one module " +
+        "biweekly, consisting of 60 to 90 minutes of digestible yet in depth content."
+      ]
+    },
+    {
       employer: "Northeastern University Oasis",
       location: "Boston, MA",
       title: "Executive Board Member - Resources Director",
@@ -57,8 +68,17 @@ export class ResumeComponent {
       responsibilities: [
         "Organizing club resources into paths which will direct students from ideation to completion of personal " +
         "projects using their chosen frameworks as a part of a goal set by Khoury College to provide students with " +
-        "out of classroom resources.", "Assigning resource breakdowns and rewrites to individuals within a group of" +
-        " 6 people, including myself."
+        "out of classroom resources.", "Directing club members to resources related to weekly hack sessions."
+      ]
+    },
+    {
+      employer: "Northeastern University Oasis",
+      location: "Boston, MA",
+      title: "Mentor",
+      date: "September 2023 - Present",
+      responsibilities: [
+        "Providing guidance and feedback during weekly club meetings to two groups of club members on their web " +
+        "development projects, teaching them the basics of React JS and databases such as Supabase and Firebase."
       ]
     },
     {
@@ -121,14 +141,12 @@ export class ResumeComponent {
       {
         club: "Northeastern Oasis",
         location: "Boston, MA",
-        title: "Club Member, Mentor",
+        title: "Club Member",
         date: "September 2022 - Present",
         responsibilities: [
-          "As a club member, conceptualized a web project and gained experience in web scraping utilizing Python," +
+          "Conceptualized a web project and gained experience in web scraping utilizing Python," +
           " Beautiful Soup, AWS, and Crontab, and self-taught basics of JavaScript, HTML, CSS, and Bootstrap for " +
-          "front-end development.",
-          "As a mentor, providing guidance and feedback during weekly club meetings to two groups of club members on " +
-          "their web development projects."
+          "front-end development."
         ]
       }
     ];
