@@ -1,10 +1,24 @@
 <div class="container min-vh-100">
   <div class="d-flex flex-row">
     <h1 class="d-flex flex-row text-primary my-4">
-      {{name}}
+      {{ name }}
       <ng-container *ngIf="github">
-        <a class="text-muted mx-3 link-info text-decoration-none" href="{{github}}" rel="noreferrer noopener"
-           target="_blank">
+        <a
+          class="text-muted mx-3 link-info text-decoration-none"
+          href="{{ github }}"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+      </ng-container>
+      <ng-container *ngIf="github2">
+        <a
+          class="text-muted mx-3 link-info text-decoration-none"
+          href="{{ github2 }}"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
           <i class="bi bi-github"></i>
         </a>
       </ng-container>
@@ -12,7 +26,7 @@
   </div>
   <ul class="mx-4 my-2">
     <ng-container *ngFor="let line of description">
-      <li>{{line}}</li>
+      <li>{{ line }}</li>
     </ng-container>
   </ul>
 
@@ -22,22 +36,27 @@
       <ng-container *ngFor="let image of images">
         <div class="col-6 mb-5">
           <div class="card shadow">
-            <h5 class="card-header text-info"><strong>{{image.title}}</strong></h5>
-            <img alt="Something went wrong!" class="card-img border-dark border-top" src="{{image.src}}">
+            <h5 class="card-header text-info">
+              <strong>{{ image.title }}</strong>
+            </h5>
+            <img
+              alt="Something went wrong!"
+              class="card-img border-dark border-top"
+              src="{{ image.src }}"
+            />
           </div>
         </div>
       </ng-container>
     </div>
   </ng-container>
 
-
   <h1 class="text-primary my-4">Skills</h1>
   <div class="row justify-content-center text-info">
     <ng-container *ngFor="let skill of skills">
       <div class="col-2 mx-2 my-4">
         <h4>
-          <i class="{{skill.icon}}"></i>
-          {{skill.name}}
+          <i class="{{ skill.icon }}"></i>
+          {{ skill.name }}
         </h4>
       </div>
     </ng-container>

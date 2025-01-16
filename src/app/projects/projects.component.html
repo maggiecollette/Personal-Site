@@ -1,33 +1,52 @@
 <div class="container min-vh-100">
-  <br>
-    <div class="row justify-content-center">
-      <ng-container *ngFor="let project of projects;">
-        <div class="col-6" *ngIf="project.name && project.image && project.description">
-          <div class="card shadow border-0 m-4">
-            <img alt="Something went wrong!" class="card-img border border-dark" src="{{project.image}}">
-            <div class="container card-body text-center">
-              <h4 class="text-info my-2"><strong>{{project.name}}</strong></h4>
-              <p class="text-dark my-3">{{project.description}}</p>
-              <ng-container *ngIf="project.buttons">
-                <div class="row justify-content-evenly">
-                  <ng-container *ngFor="let button of project.buttons">
-                    <div class="col-3">
-                      <a href="{{button.href}}" target="{{button.target}}">
-                        <button *ngIf="!button.icon" class="btn btn-outline-info my-4"
-                                type="button">{{button.text}}</button>
-                        <button *ngIf="button.icon" class="btn btn-outline-info my-4" type="button">{{button.text}}
-                          <i class="{{button.icon}}"></i></button>
-                      </a>
-                    </div>
-                  </ng-container>
-                </div>
-              </ng-container>
-              <ng-container *ngIf="project.footer.text">
-                <p class="text-info">{{project.footer.text}}</p>
-              </ng-container>
-            </div>
+  <br />
+  <div class="row justify-content-center">
+    <ng-container *ngFor="let project of projects">
+      <div
+        class="col-6"
+        *ngIf="project.name && project.image && project.description"
+      >
+        <div class="card shadow border-0 m-4">
+          <img
+            alt="Something went wrong!"
+            class="card-img border border-dark"
+            [attr.src]="project.image"
+          />
+          <div class="container card-body text-center">
+            <h4 class="text-info my-2">
+              <strong>{{ project.name }}</strong>
+            </h4>
+            <p class="text-dark my-3">{{ project.description }}</p>
+            <ng-container *ngIf="project.buttons">
+              <div class="row justify-content-evenly">
+                <ng-container *ngFor="let button of project.buttons">
+                  <div class="col-3">
+                    <a href="{{ button.href }}" target="{{ button.target }}">
+                      <button
+                        *ngIf="!button.icon"
+                        class="btn btn-outline-info my-4"
+                        type="button"
+                      >
+                        {{ button.text }}
+                      </button>
+                      <button
+                        *ngIf="button.icon"
+                        class="btn btn-outline-info my-4"
+                        type="button"
+                      >
+                        {{ button.text }} <i class="{{ button.icon }}"></i>
+                      </button>
+                    </a>
+                  </div>
+                </ng-container>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="project.footer.text">
+              <p class="text-info">{{ project.footer.text }}</p>
+            </ng-container>
           </div>
         </div>
-      </ng-container>
-    </div>
+      </div>
+    </ng-container>
+  </div>
 </div>

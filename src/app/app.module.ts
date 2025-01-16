@@ -13,6 +13,8 @@ import { ProjectPageComponent } from './project-page/project-page.component';
 import { ShellComponent } from './shell/shell.component';
 import { FileSystemComponent } from './file-system/file-system.component';
 import { RISCVProcessorComponent } from './risc-v-processor/risc-v-processor.component';
+import { KanbasReactComponent } from './kanbas-react/kanbas-react.component';
+import { ConnectNeuComponent } from './connect-neu/connect-neu.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { RISCVProcessorComponent } from './risc-v-processor/risc-v-processor.com
     ProjectPageComponent,
     ShellComponent,
     FileSystemComponent,
-    RISCVProcessorComponent
+    RISCVProcessorComponent,
+    KanbasReactComponent,
+    ConnectNeuComponent
   ],
   imports: [
     BrowserModule,

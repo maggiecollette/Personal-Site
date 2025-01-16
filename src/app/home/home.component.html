@@ -1,61 +1,92 @@
 <div id="images" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-indicators">
-    <button type="button" data-bs-target="#images" data-bs-slide-to="0" class="active" aria-current="true"></button>
-    <button type="button" data-bs-target="#images" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#images" data-bs-slide-to="2"></button>
+    <button
+      type="button"
+      data-bs-target="#images"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#images"
+      data-bs-slide-to="1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#images"
+      data-bs-slide-to="2"
+    ></button>
   </div>
   <div class="carousel-inner">
     <ng-container *ngFor="let image of images; first as isFirst">
-      <ng-container *ngIf="isFirst else other_images">
+      <ng-container *ngIf="isFirst; else other_images">
         <div class="carousel-item active">
-          <img src='{{image}}' class="d-block w-100" alt="Something went wrong!">
+          <img
+            src="{{ image }}"
+            class="d-block w-100"
+            alt="Something went wrong!"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h1>{{title}}</h1>
-            <h4>{{subtitle}}</h4>
+            <h1>{{ title }}</h1>
+            <h4>{{ subtitle }}</h4>
           </div>
         </div>
       </ng-container>
       <ng-template #other_images>
         <div class="carousel-item">
-          <img src='{{image}}' class="d-block w-100" alt="Something went wrong!">
+          <img
+            src="{{ image }}"
+            class="d-block w-100"
+            alt="Something went wrong!"
+          />
           <div class="carousel-caption d-none d-md-block">
-            <h1>{{title}}</h1>
-            <h4>{{subtitle}}</h4>
+            <h1>{{ title }}</h1>
+            <h4>{{ subtitle }}</h4>
           </div>
         </div>
       </ng-template>
     </ng-container>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#images" data-bs-slide="prev">
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#images"
+    data-bs-slide="prev"
+  >
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#images" data-bs-slide="next">
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#images"
+    data-bs-slide="next"
+  >
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
   </button>
 </div>
 
 <div class="container">
-  <br>
+  <br />
   <div class="row justify-content-center">
     <div class="col-6">
       <h5 class="text-primary">About Me</h5>
       <p>
-        I'm currently a third year student at Northeastern University pursuing a B.S. in Computer Science. While I
-        started at Northeastern as a Data Science and Biology major, I quickly found that I had a passion for the
-        problem-solving and creativity involved in my Computer Science classes, which ultimately led me to change my
-        major going into my second year. I recently completed my first Co-Op, where I gained valuable
-        industry experience as a Software Engineer at eMoney Advisor. This was a fantastic opportunity for me to apply
-        my skills in a real-world setting and collaborate with professionals in the field, and I look forward to growing
-        my knowledge further over the course of a second Co-Op in Summer/Fall 2024!
+        {{ info }}
       </p>
     </div>
   </div>
 
   <div class="text-center">
     <h2 class="text-primary">Let's get in touch!</h2>
-    <br>
+    <br />
     <h1>
-      <a class="m-2 link-info" href="https://www.linkedin.com/in/marguerite-collette" target="_blank" rel="noreferrer noopener">
+      <a
+        class="m-2 link-info"
+        href="https://www.linkedin.com/in/marguerite-collette"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <i class="bi bi-linkedin"></i>
       </a>
       <a class="m-2 link-info" href="mailto:collette.m@northeastern.edu">
@@ -63,5 +94,5 @@
       </a>
     </h1>
   </div>
-  <br>
+  <br />
 </div>
