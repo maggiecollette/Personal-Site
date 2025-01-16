@@ -7,11 +7,11 @@
     "images": [
       {
         "title": "The Current Weather Component's Empty State:",
-        "src": "assets/ANGULAR-WIDGETS-SS3.png"
+        "src": "assets/angualr-widgets/ANGULAR-WIDGETS-SS3.png"
       },
       {
         "title": "The Current Weather Component After a Search:",
-        "src": "assets/ANGULAR-WIDGETS-SS1.png"
+        "src": "assets/angular-widgets/ANGULAR-WIDGETS-SS1.png"
       }
     ],
     "skills": [
