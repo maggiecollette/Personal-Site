@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-risc-v-processor',
-  templateUrl: './risc-v-processor.component.html',
-  styleUrls: ['./risc-v-processor.component.css']
+    selector: 'app-risc-v-processor',
+    templateUrl: './risc-v-processor.component.html',
+    styleUrls: ['./risc-v-processor.component.css'],
+    standalone: false
 })
 export class RISCVProcessorComponent {
   name = "RISC-V Processor";
