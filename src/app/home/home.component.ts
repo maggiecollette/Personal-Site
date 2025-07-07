@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-home',
-    templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css'],
-    standalone: false
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
+  standalone: false,
 })
 export class HomeComponent {
-  title = "Hi, I'm Maggie!";
+  title = 'MAGGIE COLLETTE';
   subtitle = 'Northeastern University Computer Science 2025';
   images = [
     'assets/CAROUSEL-IMG3.jpg',

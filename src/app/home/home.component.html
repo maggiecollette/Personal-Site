@@ -1,98 +1,28 @@
-<div id="images" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button
-      type="button"
-      data-bs-target="#images"
-      data-bs-slide-to="0"
-      class="active"
-      aria-current="true"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#images"
-      data-bs-slide-to="1"
-    ></button>
-    <button
-      type="button"
-      data-bs-target="#images"
-      data-bs-slide-to="2"
-    ></button>
+<div class="home">
+  <div class="title-section d-flex align-items-center justify-content-center">
+    <h1 class="title">{{ title }}</h1>
   </div>
-  <div class="carousel-inner">
-    <ng-container *ngFor="let image of images; first as isFirst">
-      <ng-container *ngIf="isFirst; else other_images">
-        <div class="carousel-item active">
-          <img
-            src="{{ image }}"
-            class="d-block w-100"
-            alt="Something went wrong!"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>{{ title }}</h1>
-            <h4>{{ subtitle }}</h4>
-          </div>
-        </div>
-      </ng-container>
-      <ng-template #other_images>
-        <div class="carousel-item">
-          <img
-            src="{{ image }}"
-            class="d-block w-100"
-            alt="Something went wrong!"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>{{ title }}</h1>
-            <h4>{{ subtitle }}</h4>
-          </div>
-        </div>
-      </ng-template>
-    </ng-container>
-  </div>
-  <button
-    class="carousel-control-prev"
-    type="button"
-    data-bs-target="#images"
-    data-bs-slide="prev"
-  >
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </button>
-  <button
-    class="carousel-control-next"
-    type="button"
-    data-bs-target="#images"
-    data-bs-slide="next"
-  >
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
-</div>
 
-<div class="container">
-  <br />
-  <div class="row justify-content-center">
-    <div class="col-6">
-      <h5 class="text-primary">About Me</h5>
-      <p>
-        {{ info }}
-      </p>
+  <div class="about-section d-flex align-items-center">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-4 p-5">
+          <h2 class="subtitle">ABOUT ME</h2>
+          <p>{{ info }}</p>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="text-center">
-    <h2 class="text-primary">Let's get in touch!</h2>
-    <br />
-    <h1>
-      <a
-        class="m-2 link-info"
-        href="https://www.linkedin.com/in/marguerite-collette"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a class="m-2 link-info" href="mailto:collette.m@northeastern.edu">
-        <i class="bi bi-envelope-fill"></i>
-      </a>
-    </h1>
+  <div class="resume-projects-section">
+    <div class="p-5">
+      <h2 class="subtitle">RESUME & PROJECTS</h2>
+    </div>
   </div>
-  <br />
+
+  <div class="photography-section d-flex justify-content-end">
+    <div class="p-5">
+      <h2 class="subtitle">PHOTOGRAPHY</h2>
+    </div>
+  </div>
 </div>
