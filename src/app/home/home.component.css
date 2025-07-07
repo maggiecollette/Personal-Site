@@ -4,7 +4,7 @@
     }
 
 .title-section {
-    background-image: url('/assets/concert.jpg');
+    background-image: url('/assets/home/concert.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -28,7 +28,7 @@
 }
 
 .about-section {
-    background-image: url('/assets/porch-shadow.jpg');
+    background-image: url('/assets/home/porch-shadow.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -41,7 +41,7 @@
     font-size: 1.25rem; }
 
 .resume-projects-section {
-    background-image: url('/assets/building.jpg');
+    background-image: url('/assets/home/building.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -49,7 +49,7 @@
 }
 
 .photography-section {
-    background-image: url('/assets/street.jpg');
+    background-image: url('/assets/home/street.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
