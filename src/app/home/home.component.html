@@ -1,28 +1,51 @@
 <div class="home">
-  <div class="title-section d-flex align-items-center justify-content-center">
-    <h1 class="title">{{ title }}</h1>
+  <div class="title-section justify-content-center align-items-center">
+    <div class="container-fluid">
+      <div class="row w-100">
+        <div class="col-12 p-4 p-md-5 text-center">
+          <h1 class="title">{{ title }}</h1>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="about-section d-flex align-items-center">
+  <div class="about-section">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-4 p-5">
+        <div class="col-12 col-md-4 p-4 p-md-5">
           <h2 class="subtitle">ABOUT ME</h2>
-          <p>{{ info }}</p>
+          <p>
+            {{ info }}
+            <a [attr.href]="url" target="_blank">
+              {{ rp }}
+              <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="resume-projects-section">
-    <div class="p-5">
-      <h2 class="subtitle">RESUME & PROJECTS</h2>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 p-4 p-md-5">
+          <h2 class="subtitle">RESUME & PROJECTS</h2>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="photography-section d-flex justify-content-end">
-    <div class="p-5">
-      <h2 class="subtitle">PHOTOGRAPHY</h2>
+  <div class="photography-section align-items-center">
+    <div class="container-fluid">
+      <div class="row w-100 justify-content-end">
+        <div class="col-12 col-md-4 p-4 p-md-5 text-end">
+          <h2 class="subtitle">PHOTOGRAPHY</h2>
+          <a class="btn btn-light rounded-pill text-dark" href="photography"
+            >Gallery</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>

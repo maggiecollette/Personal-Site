@@ -1,64 +1,66 @@
-<div class="container min-vh-100">
-  <div class="d-flex flex-row">
-    <h1 class="d-flex flex-row text-primary my-4">
-      {{ name }}
-      <ng-container *ngIf="github">
-        <a
-          class="text-muted mx-3 link-info text-decoration-none"
-          href="{{ github }}"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          <i class="bi bi-github"></i>
-        </a>
+<div class="d-flex min-vh-100 p-5 dark-bg">
+  <div class="container my-5">
+    <div class="d-flex flex-row">
+      <h1 class="d-flex flex-row text-light my-4">
+        {{ name }}
+        <ng-container *ngIf="github">
+          <a
+            class="text-muted mx-3 link-info text-decoration-none"
+            href="{{ github }}"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+        </ng-container>
+        <ng-container *ngIf="github2">
+          <a
+            class="text-muted mx-3 link-info text-decoration-none"
+            href="{{ github2 }}"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+        </ng-container>
+      </h1>
+    </div>
+    <ul class="mx-4 my-2">
+      <ng-container *ngFor="let line of description">
+        <li class="text-light">{{ line }}</li>
       </ng-container>
-      <ng-container *ngIf="github2">
-        <a
-          class="text-muted mx-3 link-info text-decoration-none"
-          href="{{ github2 }}"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          <i class="bi bi-github"></i>
-        </a>
-      </ng-container>
-    </h1>
-  </div>
-  <ul class="mx-4 my-2">
-    <ng-container *ngFor="let line of description">
-      <li>{{ line }}</li>
-    </ng-container>
-  </ul>
+    </ul>
 
-  <ng-container *ngIf="images.length > 0">
-    <h1 class="text-primary my-4">Project Screenshots</h1>
-    <div class="row justify-content-center">
-      <ng-container *ngFor="let image of images">
-        <div class="col-6 mb-5">
-          <div class="card shadow">
-            <h5 class="card-header text-info">
-              <strong>{{ image.title }}</strong>
-            </h5>
-            <img
-              alt="Something went wrong!"
-              class="card-img border-dark border-top"
-              src="{{ image.src }}"
-            />
+    <ng-container *ngIf="images.length > 0">
+      <h1 class="text-light my-4">Project Screenshots</h1>
+      <div class="row justify-content-center">
+        <ng-container *ngFor="let image of images">
+          <div class="col-6 mb-5">
+            <div class="card shadow">
+              <h5 class="card-header text-dark">
+                <strong>{{ image.title }}</strong>
+              </h5>
+              <img
+                alt="Something went wrong!"
+                class="card-img border-dark border-top"
+                src="{{ image.src }}"
+              />
+            </div>
           </div>
+        </ng-container>
+      </div>
+    </ng-container>
+
+    <h1 class="text-light my-4">Skills</h1>
+    <div class="row justify-content-center text-light">
+      <ng-container *ngFor="let skill of skills">
+        <div class="col-2 mx-2 my-4">
+          <h4>
+            <i class="{{ skill.icon }}"></i>
+            {{ skill.name }}
+          </h4>
         </div>
       </ng-container>
     </div>
-  </ng-container>
-
-  <h1 class="text-primary my-4">Skills</h1>
-  <div class="row justify-content-center text-info">
-    <ng-container *ngFor="let skill of skills">
-      <div class="col-2 mx-2 my-4">
-        <h4>
-          <i class="{{ skill.icon }}"></i>
-          {{ skill.name }}
-        </h4>
-      </div>
-    </ng-container>
   </div>
 </div>

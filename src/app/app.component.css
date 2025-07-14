@@ -1,7 +1,15 @@
+/* Base header style */
 .overlay-header {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
+    width: 100%;
     background-color: transparent;
+    transition: background-color 0.4s ease;
+}
+
+.navbar-expanded-bg {
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(6px);
 }

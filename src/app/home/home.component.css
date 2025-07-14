@@ -1,14 +1,28 @@
-.home {
-    position: relative;
-    height: 200vh;
-    }
-
-.title-section {
-    background-image: url('/assets/home/concert.jpg');
+.title-section,
+.about-section,
+.resume-projects-section,
+.photography-section {
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100vw;
+    display: flex;
+}
+
+.title-section {
+    background-image: url('/assets/home/concert.jpg');
+}
+
+.about-section {
+    background-image: url('/assets/home/porch-shadow.jpg');
+}
+
+.resume-projects-section {
+    background-image: url('/assets/home/building.jpg');
+}
+
+.photography-section {
+    background-image: url('/assets/home/street.jpg');
 }
 
 .title {
@@ -24,34 +38,24 @@
     font-size: 4rem;
     color: #eeeeee;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    z-index: 1;
 }
 
-.about-section {
-    background-image: url('/assets/home/porch-shadow.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-}
-
-.about-section p {
+.about-section p, a {
     color: #eeeeee;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-    font-size: 1.25rem; }
-
-.resume-projects-section {
-    background-image: url('/assets/home/building.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
+    font-size: 1.2rem;
 }
 
-.photography-section {
-    background-image: url('/assets/home/street.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
+@media (max-width: 768px) {
+    .title {
+        font-size: 3.5rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .about-section p {
+        font-size: 1rem;
+    }
 }

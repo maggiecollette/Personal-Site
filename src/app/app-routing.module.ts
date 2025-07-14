@@ -12,6 +12,7 @@ import { FileSystemComponent } from './file-system/file-system.component';
 import { ShellComponent } from './shell/shell.component';
 import { KanbasReactComponent } from './kanbas-react/kanbas-react.component';
 import { ConnectNeuComponent } from './connect-neu/connect-neu.component';
+import { PhotographyComponent } from './photography/photography.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'basic-shell', component: ShellComponent },
   { path: 'kanbas', component: KanbasReactComponent },
   { path: 'connectNEU', component: ConnectNeuComponent },
+  { path: 'photography', component: PhotographyComponent },
 ];
 
 @NgModule({
