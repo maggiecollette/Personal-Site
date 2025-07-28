@@ -11,7 +11,7 @@ export class ResumeComponent {
   resume: SafeResourceUrl;
 
   constructor(private sanitizer: DomSanitizer) {
-    const pdfPath = '/assets/resume/Marguerite_Collette_Resume.pdf';
+    const pdfPath = 'assets/resume/Marguerite_Collette_Resume.pdf';
     this.resume = this.sanitizer.bypassSecurityTrustResourceUrl(pdfPath);
   }
 }
