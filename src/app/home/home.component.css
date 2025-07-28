@@ -1,61 +1,144 @@
-.title-section,
-.about-section,
-.resume-projects-section,
-.photography-section {
+body {
+    font-family: 'Courier Prime', monospace;
+}
+
+.home-wrapper {
+    padding-top: 100px;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier Prime', monospace;
+}
+
+.background-img {
+    background-image: url('/assets/home/concert.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
+    filter: grayscale(100%) brightness(0.4);
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
 
-.title-section {
-    background-image: url('/assets/home/concert.jpg');
+.home-content {
+    position: relative;
+    z-index: 2;
+    animation: slideUp 0.9s ease-out both;
 }
 
-.about-section {
-    background-image: url('/assets/home/porch-shadow.jpg');
+.name {
+    font-family: 'Staatliches', sans-serif;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 0 #000;
+    font-size: 3.5rem;
+    animation: skewPop 1.2s ease forwards;
 }
 
-.resume-projects-section {
-    background-image: url('/assets/home/building.jpg');
+.about-box {
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border: 2px dashed var(--accent);
+    transform: rotate(-1deg);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
+    animation: fadeSkewIn 1.2s ease both;
+    color: var(--text-light);
 }
 
-.photography-section {
-    background-image: url('/assets/home/street.jpg');
+.about-text {
+    font-size: 1.1rem;
 }
 
-.title {
-    font-family: 'HitMePunk', sans-serif;
-    font-size: 7rem;
-    color: #eeeeee;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    z-index: 1;
+.about-text a {
+    color: white;
+    text-decoration: underline dotted;
+    transition: color 0.3s ease;
 }
 
-.subtitle {
-    font-family: 'HitMePunk', sans-serif;
-    font-size: 4rem;
-    color: #eeeeee;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.about-text a:hover {
+    color: var(--accent);
+}   
+
+.nav-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s, color 0.25s;
+    font-family: 'Staatliches', sans-serif;
+    animation: popBounce 0.8s ease both;
 }
 
-.about-section p, a {
-    color: #eeeeee;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-    font-size: 1.2rem;
+.nav-box h2 {
+    color: var(--accent);
+    transition: color 0.2s ease;
+}
+
+.nav-box:hover {
+    background-color: var(--accent);
+    color: white;
+    transform: scale(1.05);
+}
+
+.nav-box:hover h2 {
+    color: white;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes skewPop {
+    0% {
+        transform: scale(0.8) skew(-5deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) skew(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSkewIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-2deg) translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-1deg) translateY(0);
+    }
+}
+
+@keyframes popBounce {
+    0% {
+        transform: scale(0.9) rotate(-1deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
-    .title {
-        font-size: 3.5rem;
+    .home-wrapper {
+        padding-top: 80px;
     }
 
-    .subtitle {
-        font-size: 2rem;
-    }
-
-    .about-section p {
-        font-size: 1rem;
+    .name {
+        font-size: 2.4rem;
     }
 }

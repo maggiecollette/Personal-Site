@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Staatliches&display=swap');
+
+:root {
+    --accent: #8d091f;
+    --text-light: #f1f1f1;
+    --dark: #222222;
+}
+
 .dark-bg {
-    background-color: #222222;
+    background: repeating-linear-gradient(45deg,
+                #1a1a1a,
+                #1a1a1a 10px,
+                #222 10px,
+                #222 20px);
+        min-height: 100vh;
+        padding-top: 120px;
+        overflow-x: hidden;
 }
 
 @font-face {
-    font-family: 'HitMePunk';
+    font-family: 'HitMePunk-1';
     src: url('/assets/fonts/hit-me-punk.01.ttf') format('truetype');
     font-weight: normal;
     font-style: normal; }
+
+@font-face {
+    font-family: 'HitMePunk-3';
+    src: url('/assets/fonts/hit-me-punk.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

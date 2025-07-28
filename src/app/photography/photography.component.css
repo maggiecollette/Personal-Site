@@ -1,0 +1,99 @@
+.photo-card {
+    background: var(--dark);
+    padding: 10px;
+    border: 2px dashed var(--accent);
+    box-shadow: 6px 6px 0 var(--accent);
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    clip-path: polygon(0% 10%, 10% 0%, 90% 0%, 100% 10%,
+            100% 90%, 90% 100%, 10% 100%, 0% 90%);
+}
+
+.photo-card:hover {
+    transform: rotate(1deg) scale(1.02);
+    box-shadow: 8px 8px 0 var(--text-light);
+}
+
+.photo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+.photo-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: var(--accent);
+    color: var(--text-light);
+    font-family: 'Courier Prime', monospace;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.photo-card:hover .photo-label {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.star-shape {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2rem;
+    color: var(--accent);
+    transform: rotate(15deg);
+    text-shadow: 2px 2px var(--text-light);
+    pointer-events: none;
+}
+e-title {
+    font-family: 'Staatliches', sans-serif;
+    color: var(--text-light);
+    letter-spacing: 1px;
+    text-shadow: 3px 3px var(--accent);
+    transform: rotate(-2deg);
+}
+
+.masonry-grid {
+    column-count: 1;
+    column-gap: 1rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 576px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .masonry-grid {
+        column-count: 3;
+    }
+}
+
+.photo-card-wrapper {
+    break-inside: avoid;
+    margin-bottom: 1rem;
+}
+
+select.form-select {
+    font-family: 'Courier Prime', monospace;
+    background-color: var(--dark);
+    color: var(--text-light);
+    border: 2px dashed var(--accent);
+    padding: 4px 8px;
+}
+
+select.form-select:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: var(--accent);
+    color: var(--text-light);
+}

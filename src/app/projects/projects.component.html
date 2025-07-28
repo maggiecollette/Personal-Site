@@ -1,51 +1,50 @@
-<div class="d-flex min-vh-100 p-5 dark-bg">
-  <div class="container min-vh-100">
-    <br />
-    <div class="row justify-content-center">
-      <ng-container *ngFor="let project of projects">
+<div class="d-flex min-vh-100 p-5 dark-bg zine-wrapper">
+  <div class="container pt-5 min-vh-100">
+    <div class="row justify-content-center gy-5">
+      <ng-container *ngFor="let project of projects; let i = index">
         <div
-          class="col-12 col-md-6"
+          class="col-12 col-md-6 zine-project"
+          [style.--order]="i"
           *ngIf="project.name && project.image && project.description"
         >
-          <div class="card shadow border-0 m-4">
-            <img
-              alt="Something went wrong!"
-              class="card-img border border-dark"
-              [attr.src]="project.image"
-            />
-            <div class="container card-body text-center">
-              <h4 class="my-2">
-                <strong>{{ project.name }}</strong>
-              </h4>
-              <p class="text-dark my-3">{{ project.description }}</p>
+          <div class="zine-frame p-3 shadow-sm">
+            <div class="zine-image-container mb-3">
+              <img
+                [attr.src]="project.image"
+                alt="project image"
+                class="zine-image img-fluid border border-light shadow"
+              />
+            </div>
+
+            <h2 class="zine-title text-uppercase text-center text-light">
+              {{ project.name }}
+            </h2>
+
+            <p class="zine-description mt-3 px-2 text-light">
+              {{ project.description }}
+            </p>
+
+            <div class="zine-buttons mt-4 text-center">
               <ng-container *ngIf="project.buttons">
-                <div class="row justify-content-evenly">
-                  <ng-container *ngFor="let button of project.buttons">
-                    <div class="col-3">
-                      <a href="{{ button.href }}" target="{{ button.target }}">
-                        <button
-                          *ngIf="!button.icon"
-                          class="btn btn-outline-dark my-4"
-                          type="button"
-                        >
-                          {{ button.text }}
-                        </button>
-                        <button
-                          *ngIf="button.icon"
-                          class="btn btn-outline-dark my-4"
-                          type="button"
-                        >
-                          {{ button.text }} <i class="{{ button.icon }}"></i>
-                        </button>
-                      </a>
-                    </div>
-                  </ng-container>
-                </div>
-              </ng-container>
-              <ng-container *ngIf="project.footer.text">
-                <p class="text-dark">{{ project.footer.text }}</p>
+                <ng-container *ngFor="let button of project.buttons">
+                  <a
+                    [href]="button.href"
+                    [target]="button.target"
+                    class="btn zine-btn me-2 my-2"
+                  >
+                    {{ button.text }}
+                    <i *ngIf="button.icon" class="{{ button.icon }}"></i>
+                  </a>
+                </ng-container>
               </ng-container>
             </div>
+
+            <p
+              class="zine-footer small mt-4 text-muted text-center"
+              *ngIf="project.footer?.text"
+            >
+              {{ project.footer.text }}
+            </p>
           </div>
         </div>
       </ng-container>

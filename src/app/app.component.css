@@ -1,4 +1,3 @@
-/* Base header style */
 .overlay-header {
     position: absolute;
     top: 0;
@@ -10,6 +9,6 @@
 }
 
 .navbar-expanded-bg {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: var(--accent);
     backdrop-filter: blur(6px);
 }

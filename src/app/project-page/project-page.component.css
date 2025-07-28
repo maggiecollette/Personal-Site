@@ -1,0 +1,115 @@
+.project-page {
+    padding: 4rem 2rem;
+    font-family: 'Courier Prime', monospace;
+    color: var(--text-light);
+    min-height: 100vh;
+}
+
+.project-page h1 {
+    font-size: 3rem;
+    font-family: 'Staatliches', sans-serif;
+    color: var(--text-light);
+}
+
+.project-page h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Staatliches', sans-serif;
+    color: var(--text-light);
+    background-color: var(--accent);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    transform: rotate(-1deg);
+    box-shadow: 3px 3px 0 var(--dark);
+}
+
+.project-page ul {
+    list-style-type: square;
+    padding-left: 1rem;
+    border-left: 4px solid var(--accent);
+    margin-left: 0.5rem;
+}
+
+.project-page li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-page a {
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.project-page a:hover {
+    transform: scale(1.05);
+    color: var(--accent);
+}
+
+.github-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.github-tag {
+    background-color: var(--text-light);
+    color: var(--dark);
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border: 2px dashed var(--accent);
+    border-radius: 6px;
+    font-family: 'Courier Prime', monospace;
+    transform: rotate(-1deg);
+    box-shadow: 3px 3px 0 var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.github-tag:hover {
+    background-color: var(--accent);
+    color: var(--text-light);
+    transform: rotate(1deg) scale(1.05);
+}
+
+.screenshot-card {
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid var(--accent);
+    background-color: var(--text-light);
+    box-shadow: 6px 6px 0 rgba(141, 9, 31, 0.7);
+    border-radius: 0;
+}
+
+.screenshot-card:hover {
+    transform: rotate(0deg) scale(1.04);
+    box-shadow: 10px 10px 0 var(--accent);
+    z-index: 2;
+}
+
+.screenshot-card .card-title {
+    font-weight: bold;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1rem;
+}
+
+.badge {
+    border-radius: 0;
+    background-color: var(--text-light);
+    color: var(--dark);
+    border: 2px solid var(--accent);
+    font-weight: bold;
+    transform: rotate(-1deg);
+    box-shadow: 2px 2px 0 var(--accent);
+    transition: all 0.2s ease-in-out;
+    font-family: 'Courier Prime', monospace;
+}
+
+.badge:hover {
+    background-color: var(--accent);
+    color: var(--text-light);
+    box-shadow: 2px 2px 0 var(--text-light);
+    transform: rotate(1deg);
+}
