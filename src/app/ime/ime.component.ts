@@ -1,9 +1,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-ime',
-  templateUrl: './ime.component.html',
-  styleUrls: ['./ime.component.css']
+    selector: 'app-ime',
+    templateUrl: './ime.component.html',
+    styleUrls: ['./ime.component.css'],
+    standalone: false
 })
 export class IMEComponent {
   name = "Image Manipulation and Enhancement";

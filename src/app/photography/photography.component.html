@@ -1,0 +1,13 @@
+<div class="dark-bg px-3 pt-5 pb-5">
+  <div class="container pt-5">
+    <div class="masonry-grid">
+      <div class="photo-card-wrapper" *ngFor="let photo of photos">
+        <div class="photo-card position-relative">
+          <img [src]="photo.src" alt="Photo" class="img-fluid photo-img" />
+          <div class="photo-label">{{ photo.loc }}</div>
+          <div class="star-shape">*</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

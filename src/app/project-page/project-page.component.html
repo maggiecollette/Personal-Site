@@ -1,64 +1,61 @@
-<div class="container min-vh-100">
-  <div class="d-flex flex-row">
-    <h1 class="d-flex flex-row text-primary my-4">
-      {{ name }}
-      <ng-container *ngIf="github">
-        <a
-          class="text-muted mx-3 link-info text-decoration-none"
-          href="{{ github }}"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          <i class="bi bi-github"></i>
-        </a>
-      </ng-container>
-      <ng-container *ngIf="github2">
-        <a
-          class="text-muted mx-3 link-info text-decoration-none"
-          href="{{ github2 }}"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          <i class="bi bi-github"></i>
-        </a>
-      </ng-container>
-    </h1>
-  </div>
-  <ul class="mx-4 my-2">
-    <ng-container *ngFor="let line of description">
-      <li>{{ line }}</li>
-    </ng-container>
-  </ul>
+<div class="dark-bg px-4 py-5 project-page">
+  <div class="container pt-5">
+    <div class="mb-5 text-light d-flex align-items-center flex-wrap gap-3">
+      <h1 class="display-4 me-3">{{ name }}</h1>
 
-  <ng-container *ngIf="images.length > 0">
-    <h1 class="text-primary my-4">Project Screenshots</h1>
-    <div class="row justify-content-center">
-      <ng-container *ngFor="let image of images">
-        <div class="col-6 mb-5">
-          <div class="card shadow">
-            <h5 class="card-header text-info">
-              <strong>{{ image.title }}</strong>
-            </h5>
-            <img
-              alt="Something went wrong!"
-              class="card-img border-dark border-top"
-              src="{{ image.src }}"
-            />
-          </div>
+      <ng-container *ngIf="github || github2">
+        <div class="github-links">
+          <a *ngIf="github" [href]="github" target="_blank" class="github-tag">
+            <i class="bi bi-github"></i> Code
+          </a>
+          <a
+            *ngIf="github2"
+            [href]="github2"
+            target="_blank"
+            class="github-tag"
+          >
+            <i class="bi bi-github"></i> More Code
+          </a>
         </div>
       </ng-container>
     </div>
-  </ng-container>
 
-  <h1 class="text-primary my-4">Skills</h1>
-  <div class="row justify-content-center text-info">
-    <ng-container *ngFor="let skill of skills">
-      <div class="col-2 mx-2 my-4">
-        <h4>
-          <i class="{{ skill.icon }}"></i>
-          {{ skill.name }}
-        </h4>
+    <div class="mb-5 description-block">
+      <ul class="text-light">
+        <li *ngFor="let line of description" class="mb-2">
+          {{ line }}
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="images.length > 0" class="mb-5">
+      <h2 class="section-heading mb-4">Project Screenshots</h2>
+      <div class="row gy-5 gx-4">
+        <ng-container *ngFor="let image of images; let i = index">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card screenshot-card h-100 shadow">
+              <img [src]="image.src" [alt]="image.title" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-center text-dark">
+                  {{ image.title }}
+                </h5>
+              </div>
+            </div>
+          </div>
+        </ng-container>
       </div>
-    </ng-container>
+    </div>
+
+    <div>
+      <h2 class="section-heading mb-4">Skills</h2>
+      <div class="d-flex flex-wrap gap-3">
+        <div
+          *ngFor="let skill of skills"
+          class="badge bg-light text-dark fs-6 p-3"
+        >
+          <i class="{{ skill.icon }} me-1"></i>{{ skill.name }}
+        </div>
+      </div>
+    </div>
   </div>
 </div>

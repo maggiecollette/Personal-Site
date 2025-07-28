@@ -1,0 +1,144 @@
+body {
+    font-family: 'Courier Prime', monospace;
+}
+
+.home-wrapper {
+    padding-top: 100px;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Courier Prime', monospace;
+}
+
+.background-img {
+    background-image: url('/assets/home/concert.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%) brightness(0.4);
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    animation: slideUp 0.9s ease-out both;
+}
+
+.name {
+    font-family: 'Staatliches', sans-serif;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 0 #000;
+    font-size: 3.5rem;
+    animation: skewPop 1.2s ease forwards;
+}
+
+.about-box {
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 2rem;
+    border: 2px dashed var(--accent);
+    transform: rotate(-1deg);
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.6);
+    animation: fadeSkewIn 1.2s ease both;
+    color: var(--text-light);
+}
+
+.about-text {
+    font-size: 1.1rem;
+}
+
+.about-text a {
+    color: white;
+    text-decoration: underline dotted;
+    transition: color 0.3s ease;
+}
+
+.about-text a:hover {
+    color: var(--accent);
+}   
+
+.nav-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-light);
+    border: 2px solid var(--accent);
+    text-decoration: none;
+    transition: transform 0.25s ease, background-color 0.25s, color 0.25s;
+    font-family: 'Staatliches', sans-serif;
+    animation: popBounce 0.8s ease both;
+}
+
+.nav-box h2 {
+    color: var(--accent);
+    transition: color 0.2s ease;
+}
+
+.nav-box:hover {
+    background-color: var(--accent);
+    color: white;
+    transform: scale(1.05);
+}
+
+.nav-box:hover h2 {
+    color: white;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes skewPop {
+    0% {
+        transform: scale(0.8) skew(-5deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) skew(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSkewIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-2deg) translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-1deg) translateY(0);
+    }
+}
+
+@keyframes popBounce {
+    0% {
+        transform: scale(0.9) rotate(-1deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-wrapper {
+        padding-top: 80px;
+    }
+
+    .name {
+        font-size: 2.4rem;
+    }
+}

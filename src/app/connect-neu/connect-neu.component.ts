@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-connect-neu',
-  templateUrl: './connect-neu.component.html',
-  styleUrls: ['./connect-neu.component.css'],
+    selector: 'app-connect-neu',
+    templateUrl: './connect-neu.component.html',
+    styleUrls: ['./connect-neu.component.css'],
+    standalone: false
 })
 export class ConnectNeuComponent {
   name = 'ConnectNEU';

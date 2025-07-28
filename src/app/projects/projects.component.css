@@ -1,0 +1,113 @@
+.zine-wrapper {
+    font-family: 'Courier Prime', monospace;
+    background-color: var(--dark);
+    letter-spacing: 0.3px;
+}
+
+.zine-frame {
+    background: var(--dark);
+    border: 2px dashed var(--text-light);
+    transform: rotate(-1.5deg);
+    box-shadow: 8px 8px 0 var(--accent);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: punchIn 0.8s ease both;
+}
+
+.zine-project:nth-child(even) .zine-frame {
+    transform: rotate(1.5deg);
+    box-shadow: -8px 8px 0 var(--accent);
+}
+
+.zine-project:nth-child(even) .zine-frame:hover {
+    transform: rotate(-1deg) scale(1.05);
+}
+
+.zine-project:nth-child(odd) .zine-frame:hover {
+    transform: rotate(1deg) scale(1.05);
+}
+
+.zine-title {
+    font-weight: 900;
+    font-size: 1.8rem;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 0.1em;
+    background: var(--accent);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    transform: rotate(-1deg);
+    border: 2px solid var(--text-light);
+    box-shadow: 3px 3px 0 var(--text-light);
+    color: var(--text-light);
+}
+
+.zine-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    border-left: 4px solid var(--text-light);
+    padding-left: 10px;
+    background-color: rgba(241, 241, 241, 0.05);
+    color: var(--text-light);
+}
+
+.zine-image {
+    border: 3px double var(--text-light);
+    transform: rotate(-1deg);
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.zine-btn {
+    background-color: var(--text-light);
+    color: var(--dark);
+    font-weight: bold;
+    border: 2px dashed var(--dark);
+    font-family: 'Courier Prime', monospace;
+    transition: all 0.2s ease-in-out;
+    padding: 0.5rem 1.2rem;
+    display: inline-block;
+}
+
+.zine-btn:hover {
+    background-color: var(--accent);
+    color: var(--text-light);
+    transform: rotate(-1deg) scale(1.05);
+    border-color: var(--text-light);
+}
+
+.zine-footer {
+    font-style: italic;
+    color: var(--text-light);
+    opacity: 0.5;
+}
+
+@keyframes zineFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(60px) scale(0.9) rotate(-2deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+}
+
+@keyframes punchIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) rotate(-2deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(-1.5deg);
+    }
+}
+
+.zine-project {
+    animation: zineFadeIn 0.7s ease-out both;
+    animation-delay: calc(var(--order) * 0.2s);
+}

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-kanbas-react',
-  templateUrl: './kanbas-react.component.html',
-  styleUrls: ['./kanbas-react.component.css'],
+    selector: 'app-kanbas-react',
+    templateUrl: './kanbas-react.component.html',
+    styleUrls: ['./kanbas-react.component.css'],
+    standalone: false
 })
 export class KanbasReactComponent {
   name = 'Kanbas';

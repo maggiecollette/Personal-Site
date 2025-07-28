@@ -4,18 +4,15 @@ import { Component } from '@angular/core';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  standalone: false,
 })
 export class HomeComponent {
-  title = "Hi, I'm Maggie!";
-  subtitle = 'Northeastern University Computer Science 2025';
-  images = [
-    'assets/CAROUSEL-IMG3.jpg',
-    'assets/CAROUSEL-IMG5.jpg',
-    'assets/CAROUSEL-IMG6.jpg',
-  ];
+  title = 'MAGGIE COLLETTE';
   info =
-    "I'm currently a fourth year student at Northeastern University pursuing a B.S. in Computer Science, graduating in May 2025. While I started at Northeastern as a Data Science and Biology major, I quickly found that I had a passion for the problem-solving and creativity involved in my Computer Science classes, which ultimately led me to change my major going into my second year." +
-    ' I have completed two Software Engineering Co-Ops - at eMoney Advisor during Fall 2023, and at MasterControl during Fall 2024. ' +
-    'Each of these opportunities has given me a chance to apply my skills in a real world setting and to learn through collaboraton with professionals in the field. ' +
-    "I'm looking forward to expanding on my learning from these experiences with a full-time role beginning in Summer 2025!";
+    "Hi, I'm Maggie! I graduated Cum Laude from Northeastern University in May 2025 with a Bachelor's of Science in Computer Science. " +
+    'After completing two six month long Software Engineering Co-Ops, first at eMoney Advisor and then at MasterControl, I am excited to begin ' +
+    'my full time career in a role that will allow me to continue to grow as an engineer. Outside of Computer Science, I enjoy photography, ' +
+    "reading about and listening to 70's-90's rock music, playing guitar, traveling, lifting, hiking, and volunteering for organizations like ";
+  rp = "Rosie's Place";
+  url = 'https://www.rosiesplace.org/';
 }

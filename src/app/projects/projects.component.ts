@@ -4,11 +4,12 @@ import { Component } from '@angular/core';
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
+  standalone: false,
 })
 export class ProjectsComponent {
   projects = [
     {
-      name: 'CS 4550 ConnectNEU',
+      name: 'ConnectNEU',
       image: 'assets/c-card.png',
       description:
         'A project developed with a group for CS 4550, web development, during the Fall 2023 semester. Conceptualized ' +
@@ -39,7 +40,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'CS 4550 Kanbas',
+      name: 'Kanbas',
       image: 'assets/modules-page.png',
       description:
         'A project developed for CS 4550, web development, during the Fall 2023 semester. Over the course of 6 ' +
@@ -101,7 +102,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'HowBusyIsMarino.com',
+      name: 'How Busy Is Marino',
       image: 'assets/OASIS-SS2.jpg',
       description:
         'A website conceptualized with group members in Northeastern Oasis during the Fall 2022 ' +
@@ -126,7 +127,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'CS 3500 Image Manipulation and Enhancement',
+      name: 'Image Manipulation and Enhancement',
       image: 'assets/IME-SS10.png',
       description:
         'Developed in Java with a class partner for CS 3500, Object Oriented Design, during the Fall ' +
@@ -145,7 +146,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'CS 3500 Marble Solitaire Game',
+      name: 'Marble Solitaire Game',
       image: 'assets/OOD-MARBLE-SOLITAIRE-SS1.png',
       description:
         'Developed in Java for CS 3500, Object Oriented Design, during the Fall 2022 semester. The main ' +
@@ -164,7 +165,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'CS 3650 Basic Shell',
+      name: 'Basic Shell',
       image: 'assets/SHELL-SS1.png',
       description:
         'Developed in C with a class partner for CS 3650, Computer Systems, during the Spring 2023 semester.' +
@@ -185,7 +186,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'CS 3650 File System',
+      name: 'File System',
       image: 'assets/FILE-SYSTEM-SS1.png',
       description:
         'Developed in C with a class partner for CS 3650, Computer Systems, during the Spring 2023 semester.' +
@@ -206,7 +207,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'EECE 2323 RISC-V Processor',
+      name: 'RISC-V Processor',
       image: 'assets/RISCV-PROCESSOR-SS1.png',
       description:
         'Developed in SystemVerilog for EECE 2323, Fundamentals of Digital Design Lab, during the Summer 1 ' +

@@ -1,0 +1,14 @@
+.overlay-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.4s ease;
+}
+
+.navbar-expanded-bg {
+    background-color: var(--accent);
+    backdrop-filter: blur(6px);
+}

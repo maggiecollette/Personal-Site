@@ -1,126 +1,23 @@
-<div class="container">
-  <br>
-  <div class="row justify-content-start">
-    <div class="col-4">
-      <a download href="{{resume}}">
-        <button class="btn btn-dark">
-          Download
-        </button>
-      </a>
-    </div>
-    <div>
-      <h3 class="text-center"><strong>{{me}}</strong></h3>
-      <br>
-      <p class="text-center">{{contacts}}</p>
-      <div class="text-center">
-        <ng-container *ngFor="let site of websites;">
-          <span class="text-center">{{site.hostName}}: </span> <a href="{{site.pageLink}}">{{site.pageLink}}</a>
-        </ng-container>
-      </div>
-      <br>
-      <p class="text-center">Available May 1, 2024</p>
-    </div>
+<div
+  class="d-flex min-vh-100 p-5 dark-bg justify-content-center align-items-start"
+>
+  <div class="resume-frame position-relative shadow-lg">
+    <img
+      src="/assets/resume/Marguerite_Collette_Resume.jpg"
+      alt="My Resume"
+      class="resume-image"
+    />
+
+    <a
+      href="/assets/resume/Marguerite_Collette_Resume.pdf"
+      download="Marguerite_Collette_Resume.pdf"
+      class="download-sticker"
+      aria-label="Download Resume"
+      title="Download Resume"
+    >
+      <i class="bi bi-download"></i> Download
+    </a>
+    <div class="extra-tape top-left"></div>
+    <div class="extra-tape bottom-right"></div>
   </div>
-  <hr>
-
-  <h5 class="text-center"><strong>Education</strong></h5>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>{{education.institution | uppercase}}</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>{{education.location}}</p>
-    </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-3 text-start">
-      <p><strong>{{education.college}}</strong></p>
-    </div>
-    <div class="col-2 text-end">
-      <p>{{education.date}}</p>
-    </div>
-  </div>
-  <div class="row justify-content-between">
-    <div class="col-5 text-start">
-      <p>{{education.degree}}</p>
-    </div>
-    <div class="col-3 text-end">
-      <p>Expected Graduation: {{education.graduation}}</p>
-    </div>
-  </div>
-  <div class="row">
-    <p>Relevant Coursework: {{education.coursework}}</p>
-    <p>Activities: {{education.involvement}}</p>
-  </div>
-  <hr>
-
-  <h5 class="text-center"><strong>Skills</strong></h5>
-  <ul>
-    <li>Front End: {{skills.frontend}}</li>
-    <li>Back End: {{skills.backend}}</li>
-    <li>Other: {{skills.other}}</li>
-  </ul>
-  <hr>
-
-  <h5 class="text-center"><strong>Work Experience</strong></h5>
-  <ng-container *ngFor="let job of work">
-    <div class="row justify-content-between">
-      <div class="col-4 text-start">
-        <p><strong>{{job.employer | uppercase}}</strong></p>
-      </div>
-      <div class="col-2 text-end">
-        <p>{{job.location}}</p>
-      </div>
-    </div>
-    <div class="row justify-content-between">
-      <div class="col-5 text-start">
-        <p><strong>{{job.title}}</strong></p>
-      </div>
-      <div class="col-3 text-end">
-        <p>{{job.date}}</p>
-      </div>
-    </div>
-    <ul>
-      <ng-container *ngFor="let point of job.responsibilities">
-        <li>{{point}}</li>
-      </ng-container>
-    </ul>
-  </ng-container>
-  <hr>
-
-  <h5 class="text-center"><strong>Clubs</strong></h5>
-  <ng-container *ngFor="let club of clubs">
-    <div class="row justify-content-between">
-      <div class="col-4 text-start">
-        <p><strong>{{club.club | uppercase}}</strong></p>
-      </div>
-      <div class="col-2 text-end">
-        <p>{{club.location}}</p>
-      </div>
-    </div>
-    <div class="row justify-content-between">
-      <div class="col-5 text-start">
-        <p><strong>{{club.title}}</strong></p>
-      </div>
-      <div class="col-3 text-end">
-        <p>{{club.date}}</p>
-      </div>
-    </div>
-    <ul>
-      <ng-container *ngFor="let point of club.responsibilities">
-        <li>{{point}}</li>
-      </ng-container>
-    </ul>
-  </ng-container>
-  <hr>
-
-  <h5 class="text-center"><strong>Projects</strong></h5>
-  <span>See a list of projects here: </span> <a href="{{projects}}">{{projects}}</a>
-  <hr>
-
-
-  <h5 class="text-center"><strong>Interests</strong></h5>
-  <ul>
-    <li>Thrifting, Photography, Reading, UConn Basketball, Cooking/Baking, Swimming, Hiking, Running, Volunteering</li>
-  </ul>
 </div>

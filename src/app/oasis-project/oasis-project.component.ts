@@ -1,9 +1,10 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-oasis-project',
-  templateUrl: './oasis-project.component.html',
-  styleUrls: ['./oasis-project.component.css']
+    selector: 'app-oasis-project',
+    templateUrl: './oasis-project.component.html',
+    styleUrls: ['./oasis-project.component.css'],
+    standalone: false
 })
 export class OasisProjectComponent {
   name = "HowBusyIsMarino.com";
