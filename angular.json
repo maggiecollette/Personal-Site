@@ -13,9 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": {
-              "base": "dist/Personal-Site"
-            },
+            "outputPath": "dist/Personal-Site",
             "index": "src/index.html",
             "baseHref": "/Personal-Site/",
             "polyfills": ["zone.js"],
