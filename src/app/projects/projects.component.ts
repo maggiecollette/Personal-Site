@@ -102,7 +102,7 @@ export class ProjectsComponent {
       },
     },
     {
-      name: 'HowBusyIsMarino.com',
+      name: 'How Busy Is Marino',
       image: 'assets/OASIS-SS2.jpg',
       description:
         'A website conceptualized with group members in Northeastern Oasis during the Fall 2022 ' +
